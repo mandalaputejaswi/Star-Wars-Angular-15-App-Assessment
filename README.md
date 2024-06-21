@@ -1,6 +1,6 @@
 # Star-Wars-Angular-15-App-Assessment
 
-# check the versions
+check the versions
 
 Angular Version - 15.2.11
 
