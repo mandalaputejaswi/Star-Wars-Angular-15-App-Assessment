@@ -1,0 +1,33 @@
+.example-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  .sidenav {
+    padding: 20px;
+    margin-right: 20px;
+    border-color: black;
+  }
+
+  .content {
+    padding: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-color: black;
+  }
+
+  .content-box {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 6px transparent;
+    border-color: #555;
+  }
+
+
+  .icon {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }

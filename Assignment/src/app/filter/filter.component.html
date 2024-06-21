@@ -1,0 +1,47 @@
+<div class="example-container">
+
+  <form (ngSubmit)="applyFilter()">
+    <mat-form-field  appearance="fill">
+      <mat-label>Movie</mat-label>
+      <mat-select [(ngModel)]="selectedMovie" name="movie">
+        <mat-option *ngFor="let movie of movies" [value]="movie.url">{{ movie.title }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+  
+    <mat-form-field  appearance="fill">
+      <mat-label>Species</mat-label>
+      <mat-select [(ngModel)]="selectedSpecies" name="species">
+        <mat-option *ngFor="let specie of species" [value]="specie.url">{{ specie.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+  
+    <mat-form-field  appearance="fill">
+      <mat-label>Starship</mat-label>
+      <mat-select [(ngModel)]="selectedStarship" name="starship">
+        <mat-option *ngFor="let starship of starships" [value]="starship.url">{{ starship.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field  appearance="fill">
+      <mat-label>Vehicle</mat-label>
+      <mat-select [(ngModel)]="selectedVehicle" name="vehicle">
+        <mat-option *ngFor="let vehicle of vehicles" [value]="vehicle.url">{{ vehicle.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field  appearance="fill">
+      <mat-label>Birth Year Range</mat-label>
+      <mat-select [(ngModel)]="birthYearRange" name="birthYear">
+        <mat-option *ngFor="let birthYear of birthYears" [value]="birthYear.birth_year">{{ birthYear.birth_year }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit" class="p-2">Search</button>
+    </form>
+
+
+</div>
